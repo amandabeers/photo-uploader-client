@@ -4,3 +4,9 @@
   margin: 0 auto;
   width: 50%;
 }
+
+.post-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: ($spacer) * 3;
+}

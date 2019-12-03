@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import { withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import axios from 'axios'
@@ -37,12 +37,7 @@ class CreatePost extends Component {
         },
         data: formData
       })
-      this.props.alert({ heading: 'Success!',
-        message: 'Your character has been created',
-        variant: 'success'
-      })
-      console.log(res)
-      // this.props.history.push(`/posts/${res.data.post._id}`)
+      this.props.history.push(`/posts/${res.data.post._id}`)
     } catch (error) {
       this.props.alert({ heading: 'Error',
         message: 'Oops! Something went wrong.',
@@ -94,4 +89,4 @@ class CreatePost extends Component {
   }
 }
 
-export default CreatePost
+export default withRouter(CreatePost)

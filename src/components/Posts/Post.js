@@ -114,7 +114,7 @@ class Post extends Component {
         <div className="post-wrapper">
           {post && (
             <Fragment>
-              <Card style={{ width: '75%' }}>
+              <Card style={{ width: '50%' }}>
                 <Card.Img variant="top" src={post.url} />
                 <Card.Body>
                   <Card.Text>

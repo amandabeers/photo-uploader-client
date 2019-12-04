@@ -75,7 +75,7 @@ class CreatePost extends Component {
             <Button variant="primary" type="submit" className="mr-2">
               Submit
             </Button>
-            <Button variant="danger" type="button" as="a" href='#'>
+            <Button variant="danger" type="button" as="a" href='#/'>
               Cancel
             </Button>
           </Form>

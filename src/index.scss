@@ -1,8 +1,20 @@
 @import '~bootstrap/scss/bootstrap';
 
+$link-color: #385898;
+
 .form-wrapper {
   margin: 0 auto;
   width: 50%;
+}
+
+.postActions {
+  font-size: .75em;
+  font-weight: bold;
+
+    &:hover {
+      color: $link-color;
+      text-decoration: underline;
+    }
 }
 
 .post-wrapper {
@@ -10,10 +22,3 @@
   justify-content: center;
   margin-top: ($spacer) * 3;
 }
-
-// .posts-wrapper {
-//   display: flex;
-//   flex-flow: row wrap;
-//   justify-content: center;
-//   margin-top: ($spacer) * 3;
-// }

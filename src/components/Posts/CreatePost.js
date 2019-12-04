@@ -19,15 +19,11 @@ class CreatePost extends Component {
 
   handleChange = (event) => {
     this.setState({ post: { ...this.state.post, [event.target.name]: [event.target.value] } })
-    // console.log(this.state)
   }
 
   handleSubmit = async (event) => {
     event.preventDefault()
     const formData = new FormData(event.target)
-    // for (const [key, value] of formData.entries()) {
-    //   console.log(key, value)
-    // }
     try {
       const res = await axios({
         url: `${apiUrl}/posts`,
